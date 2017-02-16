@@ -8,6 +8,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="bc71801947bed7455bd1c10f210e2f08" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -15,6 +19,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.GridViewTestActivity" />
+        <activity android:name=".activity.SplashActivity" />
+        <activity android:name=".activity.TimePickerActivity" />
+        <activity
+            android:name="com.zaaach.citypicker.CityPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CityPicker.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 首页显示定位城市的Demo的activity -->
+        <activity android:name=".activity.GridViewSingleActivity" />
+        <activity android:name=".activity.FromActivity" />
+        <activity android:name=".activity.ToActivity" />
+        <activity android:name=".activity.GridViewMultiChoiceActivity" />
+        <activity android:name=".activity.ShowNumberActivity" />
+        <activity android:name=".activity.DemoDatePickerActivity" />
+        <activity android:name=".activity.DemoTimePickerActivity" />
+        <activity android:name=".activity.DemoNumberPickerActivity" />
+        <activity android:name=".activity.DemoDatePickerActivity_1"></activity>
     </application>
 
 </manifest>

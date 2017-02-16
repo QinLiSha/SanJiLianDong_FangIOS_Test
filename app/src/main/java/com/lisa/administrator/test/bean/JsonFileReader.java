@@ -1,4 +1,4 @@
-package com.lisa.administrator.test;
+package com.lisa.administrator.test.bean;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * Created by One Of A Kind Lisa on 2017/1/11
+ * Created by One Of A Kind Lisa on 2017/1
  */
 
 //  读取assets中的json文件

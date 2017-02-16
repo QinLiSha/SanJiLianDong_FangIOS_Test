@@ -1,4 +1,4 @@
-package com.lisa.administrator.test;
+package com.lisa.administrator.test.bean;
 
 /**
  * Created by One Of A Kind Lisa on 2017/1/11

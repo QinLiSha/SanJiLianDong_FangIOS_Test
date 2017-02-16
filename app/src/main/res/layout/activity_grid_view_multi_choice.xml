@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_grid_view_multi_choice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.lisa.administrator.test.activity.GridViewMultiChoiceActivity">
+
+    <GridView
+        android:id="@+id/gridview_red"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:numColumns="7"></GridView>
+
+    <GridView
+        android:id="@+id/gridview_bule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="7"></GridView>
+
+    <Button
+        android:text="确认"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

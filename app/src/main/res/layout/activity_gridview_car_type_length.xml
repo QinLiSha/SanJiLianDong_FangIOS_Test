@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_grid_view_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.lisa.administrator.test.activity.GridViewTestActivity">
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="车长车型"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_car_type"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="车型："
+        android:textSize="20sp" />
+
+    <GridView
+        android:listSelector="@drawable/gridview_cartype_selector"
+        android:id="@+id/gv_car_type"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnWidth="50dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"></GridView>
+
+    <TextView
+        android:id="@+id/tv_car_length"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="车长："
+        android:textSize="20sp" />
+
+    <GridView
+        android:listSelector="@drawable/gridview_cartype_selector"
+        android:id="@+id/gv_car_length"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:columnWidth="50dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"></GridView>
+
+    <Button
+        android:id="@+id/btn_sure_choose_cartype"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:background="#60A3FE"/>
+</LinearLayout>
+
+
+    <!--anroid:numColumns="3"GridView的列数设置为3--><!--android:columnWidth="90dp",每列的宽度，也就是Item的宽度--><!--android:stretMode="columnWidth" 缩放与列宽大小同步--><!--android:verticalSpacing="10dp" 两行之间的边距--><!--android:horizontalSpacing="10dp" 两列之间的边距-->

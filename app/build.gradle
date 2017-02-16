@@ -24,10 +24,19 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.0.1'
-    testCompile 'junit:junit:4.12'
-    compile 'com.bigkoo:pickerview:2.0.8'  //三级联动地址仿ios
-    compile 'com.jakewharton:butterknife:8.4.0'//butterknife
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'//butterknife
+    //三级联动地址仿ios
+    //butterknife
 
+
+    compile 'com.github.citux:datetimepicker:0.2.0'//选择日期和时间的选择器
+
+
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.bigkoo:pickerview:2.0.8'    //首页定位和选择城市的选择器
+    compile 'com.jakewharton:butterknife:8.4.0' //butterknife
+    compile 'com.zaaach:citypicker:1.1'
+    compile 'com.android.support:support-v4:25.1.0'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.jzxiang.pickerview:TimePickerDialog:1.0.1'//另一个选择日期和时间的dialog
 }

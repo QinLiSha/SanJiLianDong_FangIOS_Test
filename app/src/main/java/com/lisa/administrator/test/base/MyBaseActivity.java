@@ -1,4 +1,4 @@
-package com.lisa.administrator.test;
+package com.lisa.administrator.test.base;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bigkoo.pickerview.OptionsPickerView;
+import com.lisa.administrator.test.bean.JsonFileReader;
+import com.lisa.administrator.test.bean.ProvinceBean;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -146,6 +148,7 @@ public class MyBaseActivity<T> extends Activity {
                             + " " + districtList.get(options1).get(option2).get(options3);
                 }
                 textView.setText(address);
+
             }
         });
         pvOptions.show();
